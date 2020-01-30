@@ -1,0 +1,28 @@
+package org.giiwa.webservice.web.admin;
+
+import org.giiwa.core.bean.X;
+import org.giiwa.core.conf.Local;
+import org.giiwa.core.json.JSON;
+import org.giiwa.framework.web.Controller;
+import org.giiwa.framework.web.Path;
+import org.giiwa.webservice.base.Web;
+
+public class webservice extends Controller {
+
+	@Path(login = true, path = "setting", access = "access.config.admin")
+	public void setting() {
+		if (method.isPost()) {
+
+			Local.setConfig("webservice.port", this.getString("webservice.port"));
+			Local.setConfig("webservice.host", this.getString("webservice.host"));
+
+			this.response(JSON.create().append(X.STATE, 201).append(X.MESSAGE, lang.get("save.success")));
+			return;
+		}
+
+		this.set("services", Web.getServices());
+
+		this.show("/admin/webservice.setting.html");
+	}
+
+}

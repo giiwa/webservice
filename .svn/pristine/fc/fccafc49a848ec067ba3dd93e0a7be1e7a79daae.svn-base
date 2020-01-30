@@ -1,0 +1,20 @@
+[
+	{
+		"name": "admin",
+		"childs": [
+			{
+				"name": "menu.system",
+				"childs": [
+					{
+						"name": "menu.webservice",
+						"classes": "icon-loop2",
+						"access": "access.config.admin",
+						"seq": 700,
+						"load": "/admin/webservice/setting"
+					}
+				]
+			}
+		]
+	}
+]
+		

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module version="1.0">
+  <id>128</id>
+  <name>webservice</name>
+  <package>org.giiwa.webservice.web</package>
+  <version>1.0</version>
+  <build>0</build>
+  <enabled>true</enabled>
+  <readme>webservice</readme>
+  <listener>
+    <!--add module listener here, please refer IListener interface-->
+    <class>org.giiwa.webservice.web.WebserviceListener</class>
+  </listener>
+  <filter>
+    <!--TODO, please refer web.IFilter, eg. <pattern>/user/login</pattern>,<class>org.giiwa.demo.web.UserFiler</class>-->
+  </filter>
+  <required>
+    <!--add all required modules here-->
+    <module name="default" minversion="1.5.1804021407" maxversion="1.5.*"/>
+  </required>
+  <key>MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKMQw+8qQ59wcL34iym4JlVeKBKTILMieVLfPDPekvQgJxglGlnDPPNINPyfBJn5rvyxLfJ0OlCVUJ1XJxNZZTCz69CBOcV20+XcFxjek/iN6ZEMkgAR3nnKfpWpVuxmn701M3yzmTn3bRfeelScG+TdRMBzXqpSTPSVNBj1htelAgMBAAECgYA5eoZmPnKZt+u1uu9q5EN24fqkGYJ0QlmbsZ6p9fG85byCEUoJi/1nD/PFfFQF5nIdFmNIzFll4EwLOhZHBsLY5a8/mfJ49RjkB8anSkYA+96GF4FNu/hKzJ/fYpz1GPmeS1zoSLZPpsEhmR4MEFxWuvm2vWpxHarHNqWDdTTcAQJBAPzgQjL6kcw/oAYHdijoGbcv0zSXEfZSPBtPn74z4VqS0kWiL9oICDBT3nCfdhR+tSRf6xD8HdGUuOMHl/B7wKUCQQClFHk52DKj9w3mKpjH/HzMvDltYVheIHZS/Jrdg3rc5pJhr3f7/du3SYl1e6+YCzdgUs0VJ3Gg2M3IQ0l1dAsBAkEAsQxerQysmeGOK8p7m0ZuAskUSgTfiaOn+8My59uxE1YqrKBSeogXG6cM3bN32/+e2fniPgEW648CJ8pAQhqTFQJBAIcaTmxs6GUQ2Ks6yXdCyNC2azl9pdjDMJOScRxBctg/TCXueYAeryc+Y+VmqLsC0vteSMG7Wl+NkD0J9KDPrAECQAyh0sK2Cdrw+n9K7P3DuPS8xg84PAjMtT+xTbAd/7o/9as6IEMx8lOKrhhQVui3evbLX/oY0F9NwnMZrhcERoI=</key>
+</module>

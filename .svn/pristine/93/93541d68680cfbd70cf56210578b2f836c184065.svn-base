@@ -1,0 +1,5 @@
+webservice.enabled=开启
+webservice.enabled.hint=是否开启Web Service
+a.setting.webservice=WebService
+webservice.port=服务端口
+webservice.host=绑定地址

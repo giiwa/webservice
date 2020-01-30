@@ -1,0 +1,5 @@
+a.webservice.setting=设置
+webservice.setting.title=Web Service设置
+webservice.port=服务端口
+webservice.host=绑定地址
+menu.webservice=Web Service

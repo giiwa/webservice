@@ -1,0 +1,32 @@
+
+<div><label><h3>$lang.get('webservice.enabled'):</h3>
+	<input type='checkbox' name='webservice.enabled' #if($local.getInt('webservice.enabled', 0)==1) checked="checked" #end/>
+	<g>$lang.get("webservice.enabled.hint")</g>
+</label></div>
+
+<div><label><h3>$lang.get('webservice.host'):</h3>
+	<input type='text' name='webservice.host' value="$!local.getString('webservice.host', '0.0.0.0')" />
+</label></div>
+
+<div><label><h3>$lang.get('webservice.port'):</h3>
+	<input type='text' name='webservice.port' value="$!local.getString('webservice.port', '9000')" />
+</label></div>
+
+<table class='tablesorter nospace' border="0" cellpadding="0" cellspacing="1">
+	<thead>
+		<tr>
+			<th>URI</th>
+			<th>Service Object</th>
+			<th>WSDL</th>
+		</tr>
+	</thead>
+	<tbody>
+#foreach($f in $list.keySet())
+	<tr>
+		<td>$!f</td>
+		<td>$!list.get($f).class.name</td>
+		<td><a href="$!{global.getString('site.url','')}:$!{local.getString('webservice.port', '9000')}$!{f}?wsdl" target="_blank">$!{f}?wsdl</a></td>
+	</tr>
+#end
+	</tbody>
+</table>
